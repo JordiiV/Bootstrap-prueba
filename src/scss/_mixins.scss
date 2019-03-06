@@ -1,0 +1,10 @@
+
+@import 'variables';
+
+@mixin heroText($color, $fontSize){
+    font-family: $font-hero;
+    text-transform: uppercase;
+    font-size: $fontSize;
+    color: $color ;
+    text-shadow: 1px 1px 1px #000;
+  }

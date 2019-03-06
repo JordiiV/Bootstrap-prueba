@@ -1,0 +1,102 @@
+@import 'mixins';
+
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+  }
+  
+  .index-page {
+    background-color: $bg-color;
+   .container-fluid{
+      .hero{
+        background-image: linear-gradient(rgba(94, 92, 92, 0.801), rgba(153,102,51,0.2)), url("http://www.buscorestaurantes.com/files/images/Can-Mauri-127093.jpg");
+        height: 100vh;
+        background-size: cover;
+        padding-top: 8vh;
+        padding-bottom:30vh;
+  
+        h1{
+            @include heroText(rgba(223, 118, 118, 0.973), 10rem);
+        }
+        
+        p{
+            @include heroText(white, 2.3rem);
+        }
+      }
+  
+  }
+  
+  .carousel-item{
+    img{
+      width:100%; 
+      height: 41vh;
+    }
+  }
+  
+  
+  button {
+  
+    @media (max-width: 767px) {
+      font-size: 1rem;
+  }
+    color:white;
+    font-size: 3rem;
+    background:transparent;
+    border-width:2px;
+    border-style: solid;
+    border-color: white;
+    position:relative;
+    margin:1em;
+    display:inline-block;
+    padding:0.5em 1em;
+    transition:all 0.3s ease-in-out;
+    text-align:center;
+    font-weight:bold;
+
+        :before,:after {      
+        display:block;
+        position:absolute;
+        border-color:#454545;
+        box-sizing:border-box;
+        border-style:solid;
+        width:1em;
+        height:1em;
+        transition:all 0.3s ease-in-out;
+        }   
+        
+        :before{
+            top:-6px;
+            left:-6px;
+            border-width:2px 0 0 2px;
+            z-index:5;
+        }
+
+        :after{
+            bottom:-6px;
+            right:-6px;
+            border-width:0 2px 2px 0;
+        }
+
+        :hover:before, :hover:after{
+            width:calc(100% + 12px);
+            height:calc(100% + 12px);
+            border-color:#fff
+        }
+        :hover{
+            color: $primary-color;
+            background-color:#fff;
+            border-color:#fff
+        }
+
+  }
+ 
+  
+  .panel {
+    max-width:960px;
+    text-align:center;
+    position:relative;
+    margin:auto;
+  }    
+  
+  
+}

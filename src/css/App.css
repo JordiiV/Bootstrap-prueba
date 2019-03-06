@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Jim+Nightshade");
+@import url("https://fonts.googleapis.com/css?family=Engagement");
+@import url("https://fonts.googleapis.com/css?family=Jim+Nightshade");
+@import url("https://fonts.googleapis.com/css?family=Engagement");
+@import url("https://fonts.googleapis.com/css?family=Jim+Nightshade");
+@import url("https://fonts.googleapis.com/css?family=Engagement");
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+
+.index-page {
+  background-color: #f5bb80;
+}
+.index-page .container-fluid .hero {
+  background-image: linear-gradient(rgba(94, 92, 92, 0.801), rgba(153, 102, 51, 0.2)), url("http://www.buscorestaurantes.com/files/images/Can-Mauri-127093.jpg");
+  height: 100vh;
+  background-size: cover;
+  padding-top: 8vh;
+  padding-bottom: 30vh;
+}
+.index-page .container-fluid .hero h1 {
+  font-family: "Jim Nightshade", cursive;
+  text-transform: uppercase;
+  font-size: 10rem;
+  color: rgba(223, 118, 118, 0.973);
+  text-shadow: 1px 1px 1px #000;
+}
+.index-page .container-fluid .hero p {
+  font-family: "Jim Nightshade", cursive;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+}
+.index-page .carousel-item img {
+  width: 100%;
+  height: 41vh;
+}
+.index-page button {
+  color: white;
+  font-size: 3rem;
+  background: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  position: relative;
+  margin: 1em;
+  display: inline-block;
+  padding: 0.5em 1em;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .index-page button {
+    font-size: 1rem;
+  }
+}
+.index-page button :before, .index-page button :after {
+  display: block;
+  position: absolute;
+  border-color: #454545;
+  box-sizing: border-box;
+  border-style: solid;
+  width: 1em;
+  height: 1em;
+  transition: all 0.3s ease-in-out;
+}
+.index-page button :before {
+  top: -6px;
+  left: -6px;
+  border-width: 2px 0 0 2px;
+  z-index: 5;
+}
+.index-page button :after {
+  bottom: -6px;
+  right: -6px;
+  border-width: 0 2px 2px 0;
+}
+.index-page button :hover:before, .index-page button :hover:after {
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border-color: #fff;
+}
+.index-page button :hover {
+  color: #333;
+  background-color: #fff;
+  border-color: #fff;
+}
+.index-page .panel {
+  max-width: 960px;
+  text-align: center;
+  position: relative;
+  margin: auto;
+}
+.index-page footer h2 {
+  font-family: "Engagement", cursive;
+}
+.index-page footer a {
+  color: #7789f1;
+  font-weight: bold;
+}
+
+footer h2 {
+  font-family: "Engagement", cursive;
+}
+footer a {
+  color: #7789f1;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=App.css.map */

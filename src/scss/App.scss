@@ -1,0 +1,21 @@
+// Comando para compilar el sass en css en caso de no tener compilador. En este caso apunta a carpetas, pero puede acerse con los archivos en src 
+// sass --watch scss:css / sass --watch App.scss:App.css 
+
+
+//Variables
+
+@import 'variables';
+
+//Paginas 
+
+@import 'indexPage';
+
+//Mixins
+
+@import 'mixins';
+
+//Componentes
+
+@import 'footer';
+
+
