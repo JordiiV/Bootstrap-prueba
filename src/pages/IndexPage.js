@@ -4,9 +4,9 @@ export default class IndexPage extends React.Component {
     render() {
         return (
             <div className="index-page">
-                <div className="container-fluid hero">
+                <div className="container-fluid">
 
-                    <div class="">
+                    <div class="hero">
                         <div class="container">
                             <div className="row">
                                 <div className="col-md-2">
